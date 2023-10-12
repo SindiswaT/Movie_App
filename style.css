@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    font-family: sans-serif;
+    color: black;
+}
+
+.topnav{
+    overflow: hidden;
+    padding: 0 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav .app_name{
+    float: left;
+    text-align: center;
+    padding: 0px 16px;
+}
+
+.topnav .app_name h2 a,
+.topnav .app_name h5 a{
+  text-decoration: none
+}
+
+.topnav .app_name h2{
+    margin-bottom: 0;
+    font-family: 'Sacremento', cursive;
+    font-size: 3em;
+    color: #D42374;
+}
+
+.topnav .app_name h5{
+    margin-top: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #A1378B;
+}
+
+.topnav .nav-bar ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.3em;
+}
+.topnav .nav-bar ul li{
+    margin: 0 1em;
+    transform: scale(1);
+    transition: .7s;
+}
+.topnav .nav-bar ul li:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #FF5800;
+}
+.topnav .nav-bar ul li a{
+    text-decoration: none;
+    color: #1c222c;
+    transition: .7s;
+}
+.topnav .nav-bar ul li a:hover{
+    color: #FF5800;
+}
+
+.search-container form{
+    background-color: #dfdcdc;
+    width: 300px;
+    height: 43px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfdcdc;
+}
+
+.search-container input{
+    all: unset;
+    font: 15px system-ui;
+    color: #151f30;
+    height: 100%;
+    width: 100%;
+    padding: 0 9px;
+}
+
+.topnav .user{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    font-size: 2em;
+    color: #FF5800;
+}
+.user p{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+#toggleDark{
+    font-size: 2em;
+    cursor: pointer;
+    color: #FF5800;
+    padding-left: 10px;
+}
+
+
+.thumbnail{
+    height: 300px;
+    width: 250px;
+    border-radius: 19px;
+}
+
+h3{
+    color: #ffff;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.card{
+    border-radius: 19px;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    background-color: #643b92;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+i{
+    padding-left: 10px;
+}
+
+@media all and (max-width: 320px){
+    .thumbnail{
+        height: 50px;
+        width: 50px;
+    }
+    h3{
+        font-size: .5em;
+    }
+    .topnav .app_name h2{
+        font-size: .5em;
+    }
+    .topnav .app_name h5{
+        font-size: .5em;
+    }
+}
